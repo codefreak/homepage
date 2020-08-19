@@ -1,0 +1,75 @@
+@import '~antd/lib/style/index';
+
+html,
+body,
+#root,
+#root > div,
+.layout-root {
+  min-height: 100vh;
+}
+
+.logo {
+  height: auto;
+  width: auto;
+}
+
+.header-logo {
+  vertical-align: top;
+  height: 50px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+.layout-footer {
+  background-color: @layout-header-background;
+  color: @layout-body-background;
+
+  h3 {
+    color: @layout-body-background;
+  }
+
+  .ant-menu {
+    .ant-menu-item {
+      height: 30px;
+      line-height: 30px;
+      padding-left: 0;
+    }
+  }
+
+  .fh-logo {
+    width: 100%;
+    height: auto;
+
+    g {
+      fill: rgba(255, 255, 255, 0.5);
+    }
+  }
+
+  a {
+    color: inherit;
+  }
+}
+
+.layout-footer-copyright {
+  margin: 40px 0 0;
+  text-align: center;
+  color: darken(@body-background, 50%);
+}
+
+.lead-text {
+  font-size: @font-size-lg;
+}
+
+.footer-logo {
+  display: block;
+  margin: 20px auto 40px;
+  height: 48px;
+
+  path {
+    fill: rgba(255, 255, 255, 0.5);
+  }
+
+  circle {
+    fill: rgba(255, 255, 255, 0.25);
+  }
+}
