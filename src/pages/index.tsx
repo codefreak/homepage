@@ -18,7 +18,7 @@ export default () => (
   <aside>
     <Row className="hero-unit">
       <Col span={10}>
-        <Title>Scalable Coding Education For The 21th Century</Title>
+        <Title>Scalable Coding Education For The 21st Century</Title>
         <Paragraph className="lead-text">
           Code FREAK is an Online Programming Environment and automatic
           Evaluation and Feedback System made for universities and higher
