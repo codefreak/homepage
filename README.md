@@ -7,7 +7,7 @@ A local setup requires nodejs and `yarn` for package management.
 
 ```shell script
 $ yarn install # installs all dependecies
-$ yarn start # starts a live-reload server on http://localhost:300 
+$ yarn start # starts a live-reload server on http://localhost:3000
 ```
 
 ## Build
