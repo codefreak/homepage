@@ -26,7 +26,9 @@ const DefaultLayout: React.FC<PropsWithChildren<any>> = ({ children }) => {
       <Header style={{ position: 'fixed', zIndex: 1, width: '100%' }}>
         <ResponsiveRow className="layout-header">
           <Col>
-            <Logo className="header-logo" />
+            <a href="/">
+              <Logo className="header-logo" />
+            </a>
           </Col>
           <Col style={{ marginLeft: 'auto' }}>
             <Menu theme="dark" mode="horizontal">
