@@ -1,12 +1,17 @@
 import React from 'react'
-import { RocketOutlined, GithubOutlined } from '@ant-design/icons'
-import { Button, Card, Col, Row, Typography } from 'antd'
+import Icon, {
+  RocketOutlined,
+  GithubOutlined,
+  BookOutlined
+} from '@ant-design/icons'
+import { Button, Card, Col, Menu, Row, Typography } from 'antd'
 import { ReactComponent as ProgLangIcon } from '../svg/programming-languages.svg'
 import { ReactComponent as DockerIcon } from '../svg/docker.svg'
 import { ReactComponent as FossIcon } from '../svg/foss.svg'
 import { ReactComponent as BrowserIdeIcon } from '../svg/in-browser-ide.svg'
 import { ReactComponent as LmsIntegrationIcon } from '../svg/lms-integration.svg'
 import { ReactComponent as ModernUiIcon } from '../svg/modern-ui.svg'
+import { ReactComponent as DockerPlainIcon } from '../svg/docker-plain.svg'
 
 import './index.less'
 
@@ -95,17 +100,40 @@ export default () => (
       </FeatureCol>
     </Row>
     <Row gutter={16}>
-      <Col span={8}>
+      <Col span={12}>
         <Title level={2}>Installation</Title>
-        <Paragraph>bla bla bla</Paragraph>
+        <Paragraph>
+          The recommended way to install Code FREAK is by using our distributed
+          Docker image. You can find the full installation instructions for
+          local testing and production deployments in our documentation.
+        </Paragraph>
+        <Paragraph>
+          <a href="https://hub.docker.com/r/cfreak/codefreak" target="_blank">
+            <img
+              alt="Docker Image Version"
+              src="https://img.shields.io/docker/v/cfreak/codefreak?label=Docker%20Image&logo=docker&sort=semver&style=for-the-badge"
+            />
+          </a>
+        </Paragraph>
+        <Button href="https://docs.codefreak.org/codefreak/for-admins/installation.html">
+          Install Documentation
+        </Button>
       </Col>
-      <Col span={8}>
-        <Title level={2}>Documentation</Title>
-        <Paragraph>bla bla bla</Paragraph>
-      </Col>
-      <Col span={8}>
-        <Title level={2}>License</Title>
-        <Paragraph>bla bla bla</Paragraph>
+      <Col span={12}>
+        <Title level={2}>Try Out</Title>
+        <Paragraph>
+          We do not provide a public demo yet but, you can use the following
+          Docker command to test Code FREAK locally on your machine:
+        </Paragraph>
+        <code>
+          <pre>{`docker run -it --rm \\
+  -v /var/run/docker.sock:/var/run/docker.sock \\
+  -p 8080:8080 \\
+  cfreak/codefreak`}</pre>
+        </code>
+        <Paragraph>
+          The UI is accessible in your browser at <code>http://localhost:8080</code>.
+        </Paragraph>
       </Col>
     </Row>
   </aside>
