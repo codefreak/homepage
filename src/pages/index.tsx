@@ -77,7 +77,7 @@ export default () => (
       <FeatureCol title="Modular Evaluation System" cover={<DockerIcon />}>
         The automatic evaluation system allows dynamic and static testing.
         Docker guarantees flexible and reproducible environments to check your
-        students code.
+        students' code.
       </FeatureCol>
       <FeatureCol title="In-Browser IDE" cover={<BrowserIdeIcon />}>
         Students can work on their tasks directly in the browser. They don't
@@ -91,13 +91,13 @@ export default () => (
         title="Integrates with your LMS"
         cover={<LmsIntegrationIcon />}
       >
-        Code FREAK can communicate with your universities' Learning Management
+        Code FREAK can communicate with your university's Learning Management
         System (LMS) like Canvas or Moodle over LTI 1.3 enabling deep linking
         and single sign on capabilities.
       </FeatureCol>
       <FeatureCol title="100% Free and Open Source" cover={<FossIcon />}>
         Code FREAK is licensed under the AGPL license which gives you freedom to
-        customize the whole system for you own needs.
+        customize the whole system for your own needs.
       </FeatureCol>
     </Row>
     <Row gutter={16}>
