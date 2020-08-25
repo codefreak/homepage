@@ -34,13 +34,14 @@ const FeatureCol: React.FC<{
 
 export default () => (
   <aside>
-    <Row className="hero-unit">
-      <Col span={12}>
+    <Row className="hero-unit" gutter={16}>
+      <Col xs={24} lg={12} style={{ marginBottom: 16 }}>
         <a className="anchor" id="about" />
         <Title>
           Coding Education Platform
           <br />
-          that supports Teachers<br/>
+          that supports Teachers
+          <br />
           and Students
         </Title>
         <Paragraph className="lead-text">
@@ -57,7 +58,7 @@ export default () => (
           Visit our GitHub Repository
         </Button>
       </Col>
-      <Col push={1} span={11}>
+      <Col xs={24} lg={12}>
         <img
           src="/screenshot.png"
           alt="Code FREAK Screenshot"
@@ -100,7 +101,7 @@ export default () => (
       </FeatureCol>
     </Row>
     <Row gutter={16}>
-      <Col span={12}>
+      <Col xs={24} md={12} style={{marginBottom: 24}}>
         <a className="anchor" id="install" />
         <Title level={2}>Installation</Title>
         <Paragraph>
@@ -120,7 +121,7 @@ export default () => (
           Install Documentation
         </Button>
       </Col>
-      <Col span={12}>
+      <Col xs={24} md={12}>
         <Title level={2}>Try Out</Title>
         <Paragraph>
           We do not provide a public demo yet but, you can use the following
@@ -133,7 +134,8 @@ export default () => (
   cfreak/codefreak`}</pre>
         </code>
         <Paragraph>
-          The UI is accessible in your browser at <code>http://localhost:8080</code>.
+          The UI is accessible in your browser at{' '}
+          <code>http://localhost:8080</code>.
         </Paragraph>
       </Col>
     </Row>
