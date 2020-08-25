@@ -35,11 +35,13 @@ const FeatureCol: React.FC<{
 export default () => (
   <aside>
     <Row className="hero-unit">
-      <Col span={10}>
+      <Col span={12}>
+        <a className="anchor" id="about" />
         <Title>
           Coding Education Platform
           <br />
-          that supports Teachers and Students
+          that supports Teachers<br/>
+          and Students
         </Title>
         <Paragraph className="lead-text">
           Code FREAK is an Online Programming Environment and automatic
@@ -48,9 +50,6 @@ export default () => (
           checking you student's code for functional correctness and possible
           issues.
         </Paragraph>
-        <Paragraph className="lead-text">
-          Code FREAK is 100% Free and Open Source!
-        </Paragraph>
         <Button size="large" type="primary" icon={<RocketOutlined />}>
           Try Code FREAK now
         </Button>{' '}
@@ -58,7 +57,7 @@ export default () => (
           Visit our GitHub Repository
         </Button>
       </Col>
-      <Col push={1} span={13}>
+      <Col push={1} span={11}>
         <img
           src="/screenshot.png"
           alt="Code FREAK Screenshot"
@@ -66,6 +65,7 @@ export default () => (
         />
       </Col>
     </Row>
+    <a className="anchor" id="features" />
     <Title level={2}>Main Features</Title>
     <Row gutter={16} style={{ marginBottom: 32 }}>
       <FeatureCol title="Language Agnostic" cover={<ProgLangIcon />}>
@@ -101,6 +101,7 @@ export default () => (
     </Row>
     <Row gutter={16}>
       <Col span={12}>
+        <a className="anchor" id="install" />
         <Title level={2}>Installation</Title>
         <Paragraph>
           The recommended way to install Code FREAK is by using our distributed

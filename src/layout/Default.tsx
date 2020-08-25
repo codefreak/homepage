@@ -32,10 +32,28 @@ const DefaultLayout: React.FC<PropsWithChildren<any>> = ({ children }) => {
           </Col>
           <Col style={{ marginLeft: 'auto' }}>
             <Menu theme="dark" mode="horizontal">
-              <Menu.Item key="about">About</Menu.Item>
-              <Menu.Item key="installation">Installation</Menu.Item>
-              <Menu.Item key="docs">Docs</Menu.Item>
-              <Menu.Item key="license">License</Menu.Item>
+              <Menu.Item key="about">
+                <a href="#about">About</a>
+              </Menu.Item>
+              <Menu.Item key="features">
+                <a href="#features">Features</a>
+              </Menu.Item>
+              <Menu.Item key="install">
+                <a href="#install">Installation</a>
+              </Menu.Item>
+              <Menu.Item key="docs">
+                <a href="https://docs.codefreak.org" target="_blank">
+                  Docs
+                </a>
+              </Menu.Item>
+              <Menu.Item key="license">
+                <a
+                  href="https://github.com/codefreak/codefreak/blob/master/LICENSE"
+                  target="_blank"
+                >
+                  License
+                </a>
+              </Menu.Item>
               <Menu.Item key="github" icon={<GithubOutlined />}>
                 <a
                   href="https://github.com/codefreak/codefreak"
