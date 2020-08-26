@@ -87,7 +87,7 @@ const DefaultLayout: React.FC<PropsWithChildren<any>> = ({ children }) => {
       <Footer className="layout-footer">
         <Logo className="footer-logo" />
         <ResponsiveRow>
-          <Col span={8}>
+          <Col xs={24} sm={8} style={{marginBottom: 24}}>
             <h3>Links</h3>
             <Menu theme="dark" selectable={false}>
               <Menu.Item>
@@ -113,10 +113,10 @@ const DefaultLayout: React.FC<PropsWithChildren<any>> = ({ children }) => {
               </Menu.Item>
             </Menu>
           </Col>
-          <Col span={16}>
+          <Col xs={24} sm={16}>
             <h3>Contact</h3>
             <Row>
-              <Col span={12}>
+              <Col xs={24} lg={12}>
                 <address>
                   <strong>Kiel University of Applied Sciences</strong>
                   <br />
@@ -125,7 +125,7 @@ const DefaultLayout: React.FC<PropsWithChildren<any>> = ({ children }) => {
                   <a href="mailto:codefreak@fh-kiel.de">codefreak@fh-kiel.de</a>
                 </address>
               </Col>
-              <Col span={12}>
+              <Col xs={24} lg={12}>
                 <a href="https://www.fh-kiel.de" target="_blank">
                   <FHLogo className="fh-logo" />
                 </a>
