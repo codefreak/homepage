@@ -10,6 +10,21 @@ import { ReactComponent as FHLogo } from '../svg/fh_kiel_logo_engl.svg'
 
 const { Header, Footer, Content } = Layout
 
+const iconSources = [
+  {
+    author: 'Payungkead',
+    url: 'https://www.flaticon.com/authors/payungkead'
+  },
+  {
+    author: 'Vectors Market',
+    url: 'https://www.flaticon.com/authors/vectors-market'
+  },
+  {
+    author: 'roserodionova',
+    url: 'https://www.freepik.com/roserodionova'
+  }
+]
+
 const DefaultLayout: React.FC<PropsWithChildren<any>> = ({ children }) => {
   return (
     <Layout className="layout-root">
@@ -119,7 +134,21 @@ const DefaultLayout: React.FC<PropsWithChildren<any>> = ({ children }) => {
           </Col>
         </ResponsiveRow>
         <ResponsiveContainer className="layout-footer-copyright">
-          © 2019-2020 codefreak.org
+          <p>© 2019-2020 codefreak.org</p>
+          <p>
+            Icons and images by{' '}
+            {iconSources.map(({ author, url }, index) => {
+              const ret = [
+                <a href={url} target="_blank" rel="noopener nofollow">
+                  {author}
+                </a>
+              ]
+              if (index + 1 !== iconSources.length) {
+                ret.push(<>, </>)
+              }
+              return ret
+            })}
+          </p>
         </ResponsiveContainer>
       </Footer>
     </Layout>
