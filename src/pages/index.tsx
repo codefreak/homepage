@@ -51,10 +51,20 @@ export default () => (
           checking you student's code for functional correctness and possible
           issues.
         </Paragraph>
-        <Button size="large" type="primary" icon={<RocketOutlined />}>
+        <Button
+          size="large"
+          type="primary"
+          icon={<RocketOutlined />}
+          href="https://github.com/codefreak/codefreak#installation"
+        >
           Try Code FREAK now
         </Button>{' '}
-        <Button size="large" type="default" icon={<GithubOutlined />}>
+        <Button
+          size="large"
+          type="default"
+          icon={<GithubOutlined />}
+          href="https://github.com/codefreak/codefreak"
+        >
           Visit our GitHub Repository
         </Button>
       </Col>
@@ -101,7 +111,7 @@ export default () => (
       </FeatureCol>
     </Row>
     <Row gutter={16}>
-      <Col xs={24} md={12} style={{marginBottom: 24}}>
+      <Col xs={24} md={12} style={{ marginBottom: 24 }}>
         <a className="anchor" id="install" />
         <Title level={2}>Installation</Title>
         <Paragraph>
