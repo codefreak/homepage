@@ -1,8 +1,7 @@
 import React from 'react'
-import Icon, {
+import {
   RocketOutlined,
-  GithubOutlined,
-  BookOutlined
+  GithubOutlined
 } from '@ant-design/icons'
 import { Button, Card, Col, Menu, Row, Typography } from 'antd'
 import { ReactComponent as ProgLangIcon } from '../svg/programming-languages.svg'
@@ -11,7 +10,6 @@ import { ReactComponent as FossIcon } from '../svg/foss.svg'
 import { ReactComponent as BrowserIdeIcon } from '../svg/in-browser-ide.svg'
 import { ReactComponent as LmsIntegrationIcon } from '../svg/lms-integration.svg'
 import { ReactComponent as ModernUiIcon } from '../svg/modern-ui.svg'
-import { ReactComponent as DockerPlainIcon } from '../svg/docker-plain.svg'
 
 import './index.less'
 

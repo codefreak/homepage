@@ -34,6 +34,10 @@ const DefaultLayout: React.FC<PropsWithChildren<any>> = ({ children }) => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
         <meta
+          name="og:image"
+          content={process.env.REACT_STATIC_SITE_ROOT + '/og-banner.png'}
+        />
+        <meta
           name="description"
           content="Online Programming Platform and Evaluation/Auto-Feedback System for Coding Assignments "
         />
@@ -87,7 +91,7 @@ const DefaultLayout: React.FC<PropsWithChildren<any>> = ({ children }) => {
       <Footer className="layout-footer">
         <Logo className="footer-logo" />
         <ResponsiveRow>
-          <Col xs={24} sm={8} style={{marginBottom: 24}}>
+          <Col xs={24} sm={8} style={{ marginBottom: 24 }}>
             <h3>Links</h3>
             <Menu theme="dark" selectable={false}>
               <Menu.Item>
