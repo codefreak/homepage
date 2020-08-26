@@ -34,7 +34,7 @@ const DefaultLayout: React.FC<PropsWithChildren<any>> = ({ children }) => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
         <meta
-          name="og:image"
+          property="og:image"
           content={process.env.REACT_STATIC_SITE_ROOT + '/og-banner.png'}
         />
         <meta
