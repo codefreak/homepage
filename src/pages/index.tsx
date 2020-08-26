@@ -31,7 +31,7 @@ const FeatureCol: React.FC<{
 )
 
 export default () => (
-  <aside>
+  <>
     <Row className="hero-unit" gutter={16}>
       <Col xs={24} lg={12} style={{ marginBottom: 16 }}>
         <a className="anchor" id="about" />
@@ -147,5 +147,5 @@ export default () => (
         </Paragraph>
       </Col>
     </Row>
-  </aside>
+  </>
 )

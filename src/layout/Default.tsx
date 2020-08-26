@@ -5,7 +5,6 @@ import ResponsiveContainer, {
   ResponsiveRow
 } from 'components/ResponsiveContainer'
 import Logo from 'components/Logo'
-import { Head } from 'react-static'
 import { ReactComponent as FHLogo } from '../svg/fh_kiel_logo_engl.svg'
 
 const { Header, Footer, Content } = Layout
@@ -28,20 +27,6 @@ const iconSources = [
 const DefaultLayout: React.FC<PropsWithChildren<any>> = ({ children }) => {
   return (
     <Layout className="layout-root">
-      <Head>
-        <title>Code FREAK | Code Feedback, Review & Evaluation Kit</title>
-        <link rel="icon" href="/favicon.ico" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content="#000000" />
-        <meta
-          property="og:image"
-          content={process.env.REACT_STATIC_SITE_ROOT + '/og-banner.png'}
-        />
-        <meta
-          name="description"
-          content="Online Programming Platform and Evaluation/Auto-Feedback System for Coding Assignments "
-        />
-      </Head>
       <Header style={{ position: 'fixed', zIndex: 1, width: '100%' }}>
         <ResponsiveRow className="layout-header">
           <Col>
