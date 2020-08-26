@@ -9,3 +9,11 @@ jobs:
       - uses: actions/checkout@v2
       - name: Build the Docker image
         run: docker build . --tag cfreak/homepage:latest
+  publish:
+    name: Publish Docker Image
+    runs-on: ubuntu-latest
+    steps:
+      - name: Login to Docker Hub
+        run: docker login --username '${{ secrets.DOCKER_HUB_USERNAME }}' --password '${{ secrets.DOCKER_HUB_PASSWORD }}'
+      - name: Push Image to Docker Hub
+        run: docker push cfreak/homepage:latest
