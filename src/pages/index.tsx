@@ -1,8 +1,5 @@
 import React from 'react'
-import {
-  RocketOutlined,
-  GithubOutlined
-} from '@ant-design/icons'
+import { RocketOutlined, GithubOutlined } from '@ant-design/icons'
 import { Button, Card, Col, Menu, Row, Typography } from 'antd'
 import { ReactComponent as ProgLangIcon } from '../svg/programming-languages.svg'
 import { ReactComponent as DockerIcon } from '../svg/docker.svg'
@@ -10,6 +7,7 @@ import { ReactComponent as FossIcon } from '../svg/foss.svg'
 import { ReactComponent as BrowserIdeIcon } from '../svg/in-browser-ide.svg'
 import { ReactComponent as LmsIntegrationIcon } from '../svg/lms-integration.svg'
 import { ReactComponent as ModernUiIcon } from '../svg/modern-ui.svg'
+import ResponsiveEmbed from 'react-responsive-embed'
 
 import './index.less'
 
@@ -107,6 +105,23 @@ export default () => (
         Code FREAK is licensed under the AGPL license which gives you freedom to
         customize the whole system for your own needs.
       </FeatureCol>
+    </Row>
+    <Title level={2}>Tutorials for Users</Title>
+    <Row gutter={16}>
+      <Col xs={24} md={12} style={{ marginBottom: 24 }}>
+        <ResponsiveEmbed
+          src="https://www.youtube-nocookie.com/embed/QhE3ft66hTY"
+          allowFullScreen
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        />
+      </Col>
+      <Col xs={24} md={12} style={{ marginBottom: 32 }}>
+        <ResponsiveEmbed
+          src="https://www.youtube-nocookie.com/embed/L0J6IZiJvYg"
+          allowFullScreen
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        />
+      </Col>
     </Row>
     <Row gutter={16}>
       <Col xs={24} md={12} style={{ marginBottom: 24 }}>
