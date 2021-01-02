@@ -44,7 +44,7 @@ export default () => (
           Code FREAK is an Online Programming Environment and automatic
           Evaluation and Feedback System made for universities and higher
           education. The modular evaluation system based on Docker helps you
-          checking you student's code for functional correctness and possible
+          checking your students' code for functional correctness and possible
           issues.
         </Paragraph>
         <Button
